@@ -1,13 +1,13 @@
 slices = large + medium + party_pizza_mini
 print(f"Total number of slices: {slices}")
 
-people = people + 1
+people += 1
 share = slices // people
 leftover = slices % people
 print(f"Each person gets: {share}")
 print(f"Leftover slices: {leftover}")
 
-people = people + 2 #Eric and Brandon are coming too.
+people += 2 #Eric and Brandon are coming too.
 share = slices // people
 leftover = slices % people
 print(f"Each person gets: {share}")
@@ -15,7 +15,7 @@ print(f"Leftover slices: {leftover}")
 
 
 
-slices = slices + party_pizza_mini
+slices += party_pizza_mini
 share = slices // people
 leftover = slices % people
 print(f"Each person gets: {share}")
