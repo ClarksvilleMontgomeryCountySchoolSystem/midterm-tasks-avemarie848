@@ -1,6 +1,6 @@
 # Debugging Challenge - Fix the bugs in each code block
 # Each block is independent and can be fixed separately
-
+Testing = False
 # Snippet 1:
 books = 12
 if books > 10:
@@ -15,47 +15,47 @@ print(favorite_color)
 # Snippet 3:
 cats = 3
 dogs = 2
-total_pets = cats + dog
+total_pets = cats + dogs
 print(f"Total pets: {total_pets}")
 
 
 # Snippet 4:
 is_sunny = True
 if is_sunny:
-print(f"Wear sunglasses")
+    print(f"Wear sunglasses")
 
 
 # Snippet 5:
 distance = 50
 time = 2
 speed = distance / time
-print(f"Speed: {speed} mph"
+print(f"Speed: {speed} mph")
 
 
 # Snippet 6:
 level = 5
-if level = 5:
-    print("You reached level 5!")
+if level == 5:
+    print(f"You reached level 5!")
 
 
 # Snippet 7:
 width = 8
 height = 10
-area = widht * height
+area = width * height
 print(f"Area: {area}")
 
 
 # Snippet 8:
 name = "Sarah"
-print "Hello", name
+print ("Hello, {name}")
 
 
 # Snippet 9:
 hungry = False
 if hungry:
-    print("Time to eat!")
-    else:
-    print("Not hungry yet")
+    print(f"Time to eat!")
+else:
+    print(f"Not hungry yet")
 
 
 # Snippet 10:
