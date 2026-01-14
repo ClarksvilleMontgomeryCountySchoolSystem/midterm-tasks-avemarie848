@@ -1,63 +1,39 @@
-# Debugging Challenge - Fix the bugs in each code block
-# Each block is independent and can be fixed separately
-Testing = False
-# Snippet 1:
-books = 12
-if books > 10:
-    print("You have a lot of books!")
+
+"""
+ANSWER BOX - Copy the strings you need:
+
+"standing up or flopped down?"
+") Keep it round.\n"
+") Attach two pieces using {color2} hanging downward.\n"
+") Name this creation: "Dog""
+") Roll a smaller ball using {color1} for the head.\n"
+"hot dog or round like a ball?"
+") Roll a ball using {color1} for the body.\n"
+") Attach two pointed pieces using {color2} upright.\n"
+") Attach the head to the body.\n"
+") Add four legs using {color1}, a small tail using {color2}, two eyes, and a nose.\n"
+") Stretch it out.\n"
+"""
+
+def main():
+    color1 = "yellow"
+    color2 = "red"
+    print(f"1) Roll a ball using {color1} for the body.\n")
+    choice1 = input("hot dog or round like a ball? ")
+    if choice1 == "hot dog":
+        print("2) Stretch it out.\n")
+    else:
+        print("2) Keep it round.\n")
+    print(f"3) Roll a smaller ball using {color1} for the head.\n")
+    print("4) Attach the head to the body.\n")
+    choice2 = input("standing up or flopped down? ")
+    if choice2 == "standing up":
+        print(f"5) Attach two pointed pieces using {color2} upright.\n")
+    else:
+        print(f"5) Attach two pieces using {color2} hanging downward.\n")
+    print(f"6) Add four legs using {color1}, a small tail using {color2}, two eyes, and a nose.\n")
+    print('7) Name this creation: "Dog"')
 
 
-# Snippet 2:
-favorite_color = "blue"
-print(favorite_color)
-
-
-# Snippet 3:
-cats = 3
-dogs = 2
-total_pets = cats + dogs
-print(f"Total pets: {total_pets}")
-
-
-# Snippet 4:
-is_sunny = True
-if is_sunny:
-    print(f"Wear sunglasses")
-
-
-# Snippet 5:
-distance = 50
-time = 2
-speed = distance / time
-print(f"Speed: {speed} mph")
-
-
-# Snippet 6:
-level = 5
-if level == 5:
-    print(f"You reached level 5!")
-
-
-# Snippet 7:
-width = 8
-height = 10
-area = width * height
-print(f"Area: {area}")
-
-
-# Snippet 8:
-name = "Sarah"
-print ("Hello, {name}")
-
-
-# Snippet 9:
-hungry = False
-if hungry:
-    print(f"Time to eat!")
-else:
-    print(f"Not hungry yet")
-
-
-# Snippet 10:
-age = 15
-print(f"I am {age} years old")
+if __name__ == "__main__":
+    main()
