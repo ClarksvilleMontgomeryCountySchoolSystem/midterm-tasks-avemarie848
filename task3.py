@@ -1,55 +1,41 @@
-# Testing flag - will be set by test
-TESTING = False  # <-- Should be False by default
-item = None
-price = None
-quantity = None
+"""
+ANSWER BOX - Copy the strings you need:
 
-print("""
-========================================
-   WELCOME TO THE PECULIAR EMPORIUM!
-   "Magical items at mundane prices!"
-   Prosperity comes in threes!
-========================================
-ITEM MENU:
-Invisibility Cloak.........$44.99
-Dragon Egg.....................$29.99
-""")
+"long body or round body?"
+") Add a small bump using {color2} to the back.\n"
+") Roll a smaller ball using {color1} for the head.\n"
+") Keep it as a ball.\n"
+"long tail or short tail?"
+") Roll a ball using {color1}.\n"
+") Add four small legs to the bottom using {color1}.\n"
+") Roll a thin rope using {color2} and attach to the back.\n"
+") Name this creation: "Mouse""
+") Roll the ball into an egg shape.\n"
+") Add two dots for eyes and a tiny nose.\n"
+") Attach the head to one end of the body.\n"
+"""
 
-menu ='''
-Flying Carpet...............$119.99
-Pheonix Feather............$14.99
-Time Turner.................$84.99
-Enchanted Sword.............$65.99
-Potion of Luck...............$11.99
-Crystal Ball.................$39.99
-'''
-print(menu)
+def main():
+    color1 = "gray"
+    color2 = "pink"
+    print(f"1) Roll a ball using {color1}.\n")
+    choice1 = input("long body or round body? ")
+    # CAUTION: You must include the word "body" when checking!
+    if choice1 == "long body":
+        print("2) Roll the ball into an egg shape.\n")
+    else:
+        print("2) Keep it as a ball.\n")
+    print(f"3) Roll a smaller ball using {color1} for the head.\n")
+    print("4) attach the head to one end of the body.\n")
+    choice2 = input("long tail or short tail? ")
+    if choice2 == "long tail":
+        print(f"5) Roll a thin rope using {color2} and attach to the back.")
+    else:
+        print(f"5) Add a small bump using {color2} to the back.")
+    print(f"6) Add four small legs to the bottom using {color1}")
+    print("7) Add two dots for eyes and a tiny nose." )
+    print('8) Name this creation: "Mouse"')
 
-# Shopkeeper's rule: All purchases must be at least 3 items for good luck!
-# (Don't worry - the shopkeeper checks every order himself)
 
-def get_purchase_info(): # Convert input when necessary
-    item = input("Crystal Ball")
-    prince = input("$39.99")
-    quantity = input("3")
-    return item, price, quantity
-
-# Only get input if NOT testing
-if not TESTING:
-    item, price, quantity = get_purchase_info()
-
-# Calculate using the input values (NOT hardcoded!)
-subtotal = quantity * price
-tax_rate = 0.095 #This is slightly different from the review. The tax multiplier is stored into a variable.
-tax = tax_rate * subtotal
-total = subtotal + tax
-total = round(total,2)
-
-# Print statements
-print("--------------------------")
-print(f"{item} x{quantity} @ {price} each")
-print("--------------------------")
-print(f"Subtotal: {subtotal}")
-print(f"Tax: {tax}")
-print(f"Total: {total}")
-print("\nThank you for shopping at\nThe Peculiar Emporium!")
+if __name__ == "__main__":
+    main()
